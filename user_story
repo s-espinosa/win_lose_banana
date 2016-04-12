@@ -1,32 +1,28 @@
-A user
-comes to the home page
+Basic Requirements to Play a Game
+Game object
+- game_code
+- players
+Players
+- name
+- role
+Roles
+- title
+
+
+Host user
+goes to the root page
 enters their name
-clicks on "New Game"
-Sees a code along with a message to give it to friends and wait for them to join
-Gives the code to two friends
+clicks host
+(player is created with name)
+(game is created with code)
+redirected to game show page (which has the code)
+also has a link to enter game
 
-The friends
-go to the home page
-enter their names
-enter the code they got
-click on Join Game
-see a holding screen that directs them to wait until all friends have joined
+other users visit root
+enter their name
+click join
+redirected to
+enter the game_code
 
-
-Once all friends have joined, they all click on Start Game
-they are shown either
-- lose*
-- banana*, or
-- win
-Win also has the buttons with the names of the other two friends
-
-The winner then clicks on either of the two friends names
-is shown if he picked correctly or not
-is asked if s/he wants ot play again
-if not
-  thanks!
-if so
-  shown a new win, lose, or banana
-end
-
-* the lose and banana screens also have the option to play again, but if the winner has not yet picked a name, they are asked to wait until a winner has been determined in their current game.
+click enter game
+see a page with their role
