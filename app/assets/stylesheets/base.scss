@@ -7,18 +7,19 @@ $yellow-text:   #A06713;
 
 body {
   margin: 0;
+  padding: 20px;
   font-family: sans-serif;
 }
 
 p {
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   font-size: 1.5em;
 }
 
 .user-form {
   margin: 0 auto;
-  padding: 20px;
+  // padding: 20px;
   text-align: center;
 
   input {
