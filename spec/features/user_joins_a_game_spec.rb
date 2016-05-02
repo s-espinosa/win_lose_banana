@@ -4,7 +4,7 @@ RSpec.feature "Joining an existing game" do
   scenario "sees a screen with their role when they join a game" do
     game = Game.new
     game.generate_game_code
-    roles = %w(win lose banana)
+    roles = %w(WINNER LOSER BANANA)
 
     visit '/'
     within("#join") do
@@ -12,7 +12,7 @@ RSpec.feature "Joining an existing game" do
       fill_in "user[game]", with: game.game_code
     end
     click_on "Join Game"
-    role = find("#role").native.inner_html
+    role = find(".display").native.inner_html
     expect(roles).to include(role)
   end
 end

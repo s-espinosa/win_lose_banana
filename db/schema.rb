@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160502022432) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "games", force: :cascade do |t|
     t.text "game_code"
   end
@@ -26,7 +29,8 @@ ActiveRecord::Schema.define(version: 20160502022432) do
     t.integer  "role"
   end
 
-  add_index "users", ["game_id"], name: "index_users_on_game_id"
-  add_index "users", ["role_id"], name: "index_users_on_role_id"
+  add_index "users", ["game_id"], name: "index_users_on_game_id", using: :btree
+  add_index "users", ["role_id"], name: "index_users_on_role_id", using: :btree
 
+  add_foreign_key "users", "games"
 end
