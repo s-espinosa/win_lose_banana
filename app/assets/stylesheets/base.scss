@@ -1,0 +1,67 @@
+$winner-blue:   #268BD2;
+$blue-text:     #074C6F;
+$loser-red:     #FF2A1A;
+$red-text:      #290002;
+$banana-yellow: #EEDD00;
+$yellow-text:   #A06713;
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+.user-form {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+
+  input {
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: $winner-blue;
+    color: white;
+    font-size: 2em;
+    font-family: 'Fredoka One', cursive;
+  }
+}
+
+#role {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.display {
+  font-family: 'Fredoka One', cursive;
+  font-size: 4.5em;
+}
+
+.winner {
+  background-color: $winner-blue;
+  color: white;
+}
+
+.loser {
+  background-color: $loser-red;
+  color: white;
+}
+
+.banana {
+  background-color: $banana-yellow;
+  color: $yellow-text;
+}

@@ -1,2 +1,7 @@
-<p>Your game code is: <%= @user.game.game_code %></p>
-<div id="role"><%= @user.role %></div>
+<body class="<%= @user.role %>">
+  <div id="role">
+    <p>Your game code is: <strong><%= @user.game.game_code %></strong></p>
+    <p class="display"><%= @user.display %></p>
+    <%= @user.flavor_text %>
+  </div>
+</body>
