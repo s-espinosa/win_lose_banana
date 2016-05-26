@@ -22,7 +22,7 @@ class GameGenerator
   end
 
   def join_game
-    game = Game.find_by(game_code: @game)
+    game = Game.find_by(game_code: @game.downcase)
     role = game.generate_role
     @user.update(game_id: game.id, role: role)
   end
