@@ -55,16 +55,16 @@ p {
 }
 
 .winner {
-  background-color: $winner-blue;
-  color: white;
+  background-color: white;
+  color: $winner-blue;
 }
 
 .loser {
-  background-color: $loser-red;
-  color: white;
+  background-color: white;
+  color: $loser-red;
 }
 
 .banana {
-  background-color: $banana-yellow;
-  color: $yellow-text;
+  background-color: white;
+  color: $banana-yellow;
 }
